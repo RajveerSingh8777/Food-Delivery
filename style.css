@@ -1,0 +1,247 @@
+/* CSS reset  */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS variables */
+:root {
+    --navbar-height: 60px;
+}
+
+/* navigation bar  */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
+
+/* navigation bar: logo and image  */
+#logo {
+    margin: -15px 9px;
+
+}
+
+#logo img {
+    margin: 20px 22px;
+    height: 61px;
+}
+
+/* navigation bar: list styling */
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgb(217, 132, 132);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+
+}
+
+#navbar ul li {
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: brown;
+    display: block;
+    padding: 11px;
+    text-decoration: none;
+    font-family: 'Bangers', cursive;
+}
+
+#navbar ul li a:hover {
+    color: rgb(46, 5, 5);
+    
+
+}
+
+/* Home section styling */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 548px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('./images/bg1.png') no-repeat center center/cover;
+    height: 549px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+
+}
+
+#home h1 {
+    color: rgb(102, 85, 85);
+    text-align: center;
+    font-family: 'Instrument Serif', serif;
+
+}
+
+#home p {
+    color: rgb(80, 62, 62);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Instrument Serif', serif;
+
+}
+
+/* services container  */
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+/* #services::before
+{
+    content: "";
+    position: absolute;
+    background-color: rgb(228, 122, 122);
+} */
+#services .box {
+    border: 2px solid brown;
+    width: 300px;
+    padding: 14px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: rgb(243, 236, 236);
+
+}
+
+#services .box img {
+    height: 200px;
+    margin: auto;
+    display: block;
+}
+
+/* client section  */
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#clients::before{
+    content: "";
+    position: absolute;
+    background: url('./images/bg1.png') no-repeat center center/cover;
+    height: 141px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+
+
+}
+
+#clients .clients-item img{
+    padding: 20px;
+    height: 100px;
+    width: 100px;
+}
+
+/* contact section  */
+.contact{
+    position: relative;
+}
+.contact::before{
+    content: "";
+    position: absolute;
+    background: url('./images/contact.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, #contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 0.8rem;
+
+}
+
+#contact-box form{
+    width: 40%;
+    
+}
+#contact-box label{
+    font-size: 1.4rem;
+    font-family: 'Instrument Serif', serif;
+
+}
+footer{
+    background-color: rgb(122, 119, 119);
+    color: white;
+    
+}
+/* utility class */
+.primary {
+    
+    font-size: 2.8rem;
+    padding: 30px;
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    color: rgb(215, 42, 42);
+}
+.primary1 {
+    border: 2px solid brown;
+    border-radius: 5px;
+    background-color: rgb(223, 196, 196);
+    font-size: 2.8rem;
+    padding: 30px;
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    color: rgb(215, 42, 42);
+}
+.primary2{
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    color: rgb(215, 42, 42);
+    padding-top: 5px;
+}
+
+.secondary {
+    font-size: 1.5rem;
+    padding: 20px;
+    text-align: center;
+    /* justify-content: center; */
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: rgb(232, 184, 184);
+    color: rgb(91, 67, 67);
+    margin: 17px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-family: 'Bangers', cursive;
+}
+
+.center {
+    font-size: 1rem;
+    padding: 5px;
+    text-align: center;
+}
